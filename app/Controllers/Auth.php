@@ -9,7 +9,7 @@ class Auth extends BaseController
 {
     public function index()
     {
-        return  view('sip/pages/login');
+        return  view('peserta/pages/login');
     }
 
     public function setting()

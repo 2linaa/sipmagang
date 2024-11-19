@@ -4,8 +4,8 @@
 <!-- ! Main -->
 <main class="main users chart-page" id="skip-target">
     <div class="container">
-        <!-- <h2 class="main-title">Dashboard</h2> -->
-        <!-- <div class="row stat-cards ">
+        <h2 class="main-title">Dashboard</h2>
+        <div class="row stat-cards ">
             <div class="col-md-6 col-xl-3 ">
                 <article class="stat-cards-item">
                     <div class="stat-cards-icon purple">
@@ -82,12 +82,12 @@
                     </div>
                 </article>
             </div>
-        </div> -->
-        <!-- <div class="row">
+        </div>
+        <div class="row">
             <div class="col-lg-9">
-            <div class="chart">
+            <!-- <div class="chart">
               <canvas id="myChart" aria-label="Site statistics" role="img"></canvas>
-            </div>
+            </div> -->
             <div class="users-table table-wrapper">
               <table class="posts-table">
                 <thead>
@@ -407,7 +407,7 @@
               </ul>
             </article>
           </div>
-        </div> -->
+        </div>
     </div>
 </main>
 <?= $this->endsection() ?>

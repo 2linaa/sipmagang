@@ -19,7 +19,7 @@
         <div class="sidebar-body">
             <ul class="sidebar-body-menu">
                 <li>
-                    <a class="active" href="/"><span class="icon home" aria-hidden="true"></span>Dashboard</a>
+                    <a class="" href="<?= base_url('/admin/dashboard') ?>"><span class="icon home" aria-hidden="true"></span>Dashboard</a>
                 </li>
                 <!-- <li>
                     <a class="show-cat-btn" href="##">
@@ -107,7 +107,7 @@
                     </a>
                     <ul class="cat-sub-menu">
                         <li>
-                            <a href="users-01.html">Users-01</a>
+                            <a href="<?= base_url('/admin/internships') ?>" aria-hidden="true">Pendaftar</a>
                         </li>
                         <li>
                             <a href="users-02.html">Users-02</a>

@@ -7,7 +7,7 @@ class InternshipModel extends Model
 {
     protected $table = 'internships';
     protected $primaryKey = 'id';
-    protected $allowedFields = ['nama', 'no_telepon', 'email', 'instansi', 'mulai', 'selesai', 'surat', 'status_penerimaan', 'kode_pendaftaran'];
+    protected $allowedFields = ['nama', 'no_telepon', 'email', 'instansi', 'mulai', 'selesai', 'surat', 'reomendasi', 'status_penerimaan', 'kode_pendaftaran'];
     protected $useTimestamps = true;
 
     public function createInternships($data)

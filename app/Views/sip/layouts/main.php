@@ -9,41 +9,42 @@
   <!-- Favicon -->
   <link rel="shortcut icon" href="./img/svg/logo.svg" type="image/x-icon">
   <!-- Custom styles -->
-  <link rel="stylesheet" href="./css/style.min.css">
+  <link rel="stylesheet" href="<?= base_url('sip/css/style.css') ?>">
   <link rel="stylesheet" href="<?= base_url('sip/css/style.min.css') ?>">
   <link rel="stylesheet" href="<?= base_url('sip/css/style.min.css.map') ?>">
-  <link rel="stylesheet" href="<?= base_url('sip/css/style.css') ?>">
 
 </head>
 
 <body>
+  <!-- ! Body -->
   <div class="layer"></div>
-<!-- ! Body -->
-<a class="skip-link sr-only" href="#skip-target">Skip to content</a>
-<div class="page-flex">
-  <!-- ! Sidebar -->
-  <?= $this->include('sip/layouts/sidebar') ?>
+  <a class="skip-link sr-only" href="#skip-target">Skip to content</a>
 
-  <div class="main-wrapper">
-    <!-- ! Main nav -->
-    <?= $this->include('sip/layouts/navbar') ?>
+  <div class="page-flex">
+    <!-- ! Sidebar -->
+    <?= $this->include('sip/layouts/sidebar') ?>
 
-    <?= $this->renderSection('content') ?>
+    <div class="main-wrapper">
+      <?= $this->include('sip/layouts/navbar') ?>
 
-    <?= $this->include('sip/layouts/footer') ?>
+      <!-- ! Main nav -->
 
+      <?= $this->renderSection('content') ?>
+
+      <?= $this->include('sip/layouts/footer') ?>
+    </div>
   </div>
-</div>
-<!-- Chart library -->
-<script src="./plugins/chart.min.js"></script>
-<!-- Icons library -->
-<script src="plugins/feather.min.js"></script>
-<!-- Custom scripts -->
-<script src="js/script.js"></script>
-<script src="<?= base_url('sip/js/script.js') ?>"></script>
-<script src="<?= base_url('sip/plugins/chart.min.js') ?>"></script>
-<script src="<?= base_url('sip/plugins/feather.min.js') ?>"></script>
-<script src="<?= base_url('sip/plugins/feather.min.js.map') ?>"></script>
+  <!-- Chart library -->
+  <script src="./plugins/chart.min.js"></script>
+  <!-- Icons library -->
+  <script src="plugins/feather.min.js"></script>
+  <!-- Custom scripts -->
+  <script src="js/script.js"></script>
+  <script src="<?= base_url('sip/js/script.js') ?>"></script>
+  <script src="<?= base_url('sip/plugins/chart.min.js') ?>"></script>
+  <script src="<?= base_url('sip/plugins/feather.min.js') ?>"></script>
+  <script src="<?= base_url('sip/plugins/feather.min.js.map') ?>"></script>
+  <?= $this->renderSection('script') ?>
 
 </body>
 
